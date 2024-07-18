@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.ItunesKind = void 0;
 var ItunesKind;
 (function (ItunesKind) {
     ItunesKind["Book"] = "book";
@@ -14,4 +15,4 @@ var ItunesKind;
     ItunesKind["Song"] = "song";
     ItunesKind["TvEpisode"] = "tv-episode";
     ItunesKind["Artist"] = "artist";
-})(ItunesKind = exports.ItunesKind || (exports.ItunesKind = {}));
+})(ItunesKind || (exports.ItunesKind = ItunesKind = {}));

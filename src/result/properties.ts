@@ -11,6 +11,8 @@ export class ItunesProperties {
   readonly trackId?: number;
 
   readonly artistName?: string;
+  readonly shortDescription?: string;
+  readonly longDescription?: string;
   readonly collectionName: string;
   readonly trackName?: string;
   readonly collectionCensoredName?: string;
@@ -56,6 +58,8 @@ export class ItunesProperties {
 
     this.artistName = options.artistName;
     this.collectionName = options.collectionName;
+    this.longDescription = options.longDescription;
+    this.shortDescription = options.shortDescription;
     this.trackName = options.trackName;
     this.collectionCensoredName = options.collectionCensoredName;
     this.trackCensoredName = options.trackCensoredName;

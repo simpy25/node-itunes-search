@@ -1,5 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.ItunesSearchOptions = void 0;
+exports.toSearchUri = toSearchUri;
 function toSearchUri(options) {
     const searchTerm = "term=" + options.term;
     const searchCountry = options.country ? "&country=" + options.country : "";
@@ -18,7 +20,6 @@ function toSearchUri(options) {
         : "";
     return searchTerm + searchCountry + searchMedia + searchEntity + searchLimit + searchExtras;
 }
-exports.toSearchUri = toSearchUri;
 class ItunesSearchOptions {
     constructor(options) {
         // Converts object to URI safe parameters
@@ -32,6 +33,7 @@ class ItunesSearchOptions {
         this.extras = options.extras;
     }
 }
+exports.ItunesSearchOptions = ItunesSearchOptions;
 ItunesSearchOptions.from = (options) => new ItunesSearchOptions({
     term: options.term,
     country: options.country,
@@ -41,4 +43,3 @@ ItunesSearchOptions.from = (options) => new ItunesSearchOptions({
     lang: options.lang,
     extras: options.extras
 });
-exports.ItunesSearchOptions = ItunesSearchOptions;

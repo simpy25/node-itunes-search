@@ -8,6 +8,8 @@ export declare class ItunesProperties {
     readonly collectionId?: number;
     readonly trackId?: number;
     readonly artistName?: string;
+    readonly shortDescription?: string;
+    readonly longDescription?: string;
     readonly collectionName: string;
     readonly trackName?: string;
     readonly collectionCensoredName?: string;

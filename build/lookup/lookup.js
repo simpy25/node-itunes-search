@@ -1,5 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.itunesLookupRoot = void 0;
+exports.lookupItunes = lookupItunes;
 const result_1 = require("../result/result");
 const lookup_options_1 = require("./lookup-options");
 exports.itunesLookupRoot = "https://itunes.apple.com/lookup";
@@ -19,4 +21,3 @@ function lookupItunes(options) {
         });
     });
 }
-exports.lookupItunes = lookupItunes;

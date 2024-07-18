@@ -1,5 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.ItunesLookupOptions = exports.ItunesLookupType = void 0;
+exports.toLookupUri = toLookupUri;
 var ItunesLookupType;
 (function (ItunesLookupType) {
     ItunesLookupType["ID"] = "id";
@@ -8,7 +10,7 @@ var ItunesLookupType;
     ItunesLookupType["AMGVIDEOID"] = "amgVideoId";
     ItunesLookupType["UPC"] = "upc";
     ItunesLookupType["ISBN"] = "isbn";
-})(ItunesLookupType = exports.ItunesLookupType || (exports.ItunesLookupType = {}));
+})(ItunesLookupType || (exports.ItunesLookupType = ItunesLookupType = {}));
 function toLookupUri(options) {
     // Converting all keys to comma seperated string
     const lookupKeys = (() => {
@@ -32,7 +34,6 @@ function toLookupUri(options) {
         : "";
     return lookupKeys + lookupEntity + lookupLimit + lookupExtras;
 }
-exports.toLookupUri = toLookupUri;
 class ItunesLookupOptions {
     constructor(options) {
         // TODO change to "toUri" for consistent naming
@@ -45,6 +46,7 @@ class ItunesLookupOptions {
         this.extras = options.extras;
     }
 }
+exports.ItunesLookupOptions = ItunesLookupOptions;
 ItunesLookupOptions.from = (options) => new ItunesLookupOptions({
     keys: options.keys,
     keyType: options.keyType,
@@ -52,4 +54,3 @@ ItunesLookupOptions.from = (options) => new ItunesLookupOptions({
     limit: options.limit,
     extras: options.extras
 });
-exports.ItunesLookupOptions = ItunesLookupOptions;

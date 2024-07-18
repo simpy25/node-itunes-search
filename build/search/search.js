@@ -1,5 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.itunesSearchRoot = void 0;
+exports.searchItunes = searchItunes;
 const result_1 = require("../result/result");
 const search_options_1 = require("./search-options");
 exports.itunesSearchRoot = "https://itunes.apple.com/search";
@@ -21,4 +23,3 @@ function searchItunes(options) {
         });
     });
 }
-exports.searchItunes = searchItunes;

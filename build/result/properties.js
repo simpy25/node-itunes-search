@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.ItunesProperties = void 0;
 class ItunesProperties {
     constructor(options) {
         this.wrapperType = options.wrapperType;
@@ -9,6 +10,8 @@ class ItunesProperties {
         this.trackId = options.trackId;
         this.artistName = options.artistName;
         this.collectionName = options.collectionName;
+        this.longDescription = options.longDescription;
+        this.shortDescription = options.shortDescription;
         this.trackName = options.trackName;
         this.collectionCensoredName = options.collectionCensoredName;
         this.trackCensoredName = options.trackCensoredName;

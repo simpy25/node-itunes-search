@@ -1,15 +1,16 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.ItunesEntityAll = exports.ItunesEntityEbook = exports.ItunesEntitySoftware = exports.ItunesEntityTvShow = exports.ItunesEntityShortFilm = exports.ItunesEntityAudioBook = exports.ItunesEntityMusicVideo = exports.ItunesEntityMusic = exports.ItunesEntityPodcast = exports.ItunesEntityMovie = void 0;
 var ItunesEntityMovie;
 (function (ItunesEntityMovie) {
     ItunesEntityMovie["MovieArtist"] = "movieArtist";
     ItunesEntityMovie["Movie"] = "movie";
-})(ItunesEntityMovie = exports.ItunesEntityMovie || (exports.ItunesEntityMovie = {}));
+})(ItunesEntityMovie || (exports.ItunesEntityMovie = ItunesEntityMovie = {}));
 var ItunesEntityPodcast;
 (function (ItunesEntityPodcast) {
     ItunesEntityPodcast["PodcastAuthor"] = "podcastAuthor";
     ItunesEntityPodcast["Podcast"] = "podcast";
-})(ItunesEntityPodcast = exports.ItunesEntityPodcast || (exports.ItunesEntityPodcast = {}));
+})(ItunesEntityPodcast || (exports.ItunesEntityPodcast = ItunesEntityPodcast = {}));
 var ItunesEntityMusic;
 (function (ItunesEntityMusic) {
     ItunesEntityMusic["MusicArtist"] = "musicArtist";
@@ -18,37 +19,37 @@ var ItunesEntityMusic;
     ItunesEntityMusic["MusicVideo"] = "musicVideo";
     ItunesEntityMusic["Mix"] = "mix";
     ItunesEntityMusic["Song"] = "song";
-})(ItunesEntityMusic = exports.ItunesEntityMusic || (exports.ItunesEntityMusic = {}));
+})(ItunesEntityMusic || (exports.ItunesEntityMusic = ItunesEntityMusic = {}));
 var ItunesEntityMusicVideo;
 (function (ItunesEntityMusicVideo) {
     ItunesEntityMusicVideo["MusicArtist"] = "musicArtist";
     ItunesEntityMusicVideo["MusicVideo"] = "musicVideo";
-})(ItunesEntityMusicVideo = exports.ItunesEntityMusicVideo || (exports.ItunesEntityMusicVideo = {}));
+})(ItunesEntityMusicVideo || (exports.ItunesEntityMusicVideo = ItunesEntityMusicVideo = {}));
 var ItunesEntityAudioBook;
 (function (ItunesEntityAudioBook) {
     ItunesEntityAudioBook["AudioBookAuthor"] = "audiobookAuthor";
     ItunesEntityAudioBook["AudioBook"] = "audiobook";
-})(ItunesEntityAudioBook = exports.ItunesEntityAudioBook || (exports.ItunesEntityAudioBook = {}));
+})(ItunesEntityAudioBook || (exports.ItunesEntityAudioBook = ItunesEntityAudioBook = {}));
 var ItunesEntityShortFilm;
 (function (ItunesEntityShortFilm) {
     ItunesEntityShortFilm["ShortFilmArtist"] = "shortFilmArtist";
     ItunesEntityShortFilm["ShortFilm"] = "shortFilm";
-})(ItunesEntityShortFilm = exports.ItunesEntityShortFilm || (exports.ItunesEntityShortFilm = {}));
+})(ItunesEntityShortFilm || (exports.ItunesEntityShortFilm = ItunesEntityShortFilm = {}));
 var ItunesEntityTvShow;
 (function (ItunesEntityTvShow) {
     ItunesEntityTvShow["TvEpisode"] = "tvEpisode";
     ItunesEntityTvShow["TvSeason"] = "tvSeason";
-})(ItunesEntityTvShow = exports.ItunesEntityTvShow || (exports.ItunesEntityTvShow = {}));
+})(ItunesEntityTvShow || (exports.ItunesEntityTvShow = ItunesEntityTvShow = {}));
 var ItunesEntitySoftware;
 (function (ItunesEntitySoftware) {
     ItunesEntitySoftware["Software"] = "software";
     ItunesEntitySoftware["IPadSoftware"] = "iPadSoftware";
     ItunesEntitySoftware["MacSoftware"] = "macSoftware";
-})(ItunesEntitySoftware = exports.ItunesEntitySoftware || (exports.ItunesEntitySoftware = {}));
+})(ItunesEntitySoftware || (exports.ItunesEntitySoftware = ItunesEntitySoftware = {}));
 var ItunesEntityEbook;
 (function (ItunesEntityEbook) {
     ItunesEntityEbook["Ebook"] = "ebook";
-})(ItunesEntityEbook = exports.ItunesEntityEbook || (exports.ItunesEntityEbook = {}));
+})(ItunesEntityEbook || (exports.ItunesEntityEbook = ItunesEntityEbook = {}));
 var ItunesEntityAll;
 (function (ItunesEntityAll) {
     ItunesEntityAll["Movie"] = "movie";
@@ -60,4 +61,4 @@ var ItunesEntityAll;
     ItunesEntityAll["AudioBook"] = "audiobook";
     ItunesEntityAll["TvSeason"] = "tvSeason";
     ItunesEntityAll["AllTrack"] = "allTrack";
-})(ItunesEntityAll = exports.ItunesEntityAll || (exports.ItunesEntityAll = {}));
+})(ItunesEntityAll || (exports.ItunesEntityAll = ItunesEntityAll = {}));

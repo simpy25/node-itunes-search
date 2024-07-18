@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.ItunesResult = void 0;
 const properties_1 = require("./properties");
 class ItunesResult {
     // Parse an array of [ItunesProperties] objects from an array of raw results
